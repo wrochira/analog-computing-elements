@@ -42,7 +42,7 @@ The following table outlines the analog computing elements and their ideal trans
     <tr>
         <td width="100" align="center" valign="center"><b>Name</b></td>
         <td width="150" align="center" valign="center"><b>Symbol</b></td>
-        <td width="300" align="center" valign="center"><b>Transfer<br>Function</b></td>
+        <td width="300" align="center" valign="center"><b>Transfer Function</b></td>
     </tr>
     <tr>
         <td align="center" valign="center">Coefficient</td>
