@@ -1,0 +1,30 @@
+* Absolute Minimal AD633 Analog Multiplier Model
+* Just implements core function: W = (X1-X2)*(Y1-Y2)/10 + Z
+*
+* Node assignments
+*             X1
+*             |  X2
+*             |  |  Y1
+*             |  |  |  Y2
+*             |  |  |  |  VNEG
+*             |  |  |  |  |  Z
+*             |  |  |  |  |  |  W
+*             |  |  |  |  |  |  |  VPOS
+*             |  |  |  |  |  |  |  |
+.SUBCKT AD633 1  2  3  4  5  6  7  8
+*
+* Minimum required input impedances
+* Core multiplication and sum function
+* Step 1: X1-X2 differential
+EX 11 0 1 2 1
+* Step 2: Y1-Y2 differential
+EY 12 0 3 4 1
+* Step 3: (X1-X2)*(Y1-Y2)/10 
+EMULT 13 0 POLY(2) 11 0 12 0 0 0 0 0 0.1
+* Step 4: Z input
+* Step 5: Add Z to multiplication result
+ESUM 14 0 POLY(2) 13 0 6 0 0 1 1
+* Step 6: Output to W
+ROUT 14 7 10
+*
+.ENDS AD633
