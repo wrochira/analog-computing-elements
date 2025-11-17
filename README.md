@@ -58,7 +58,7 @@ The elements are available at three abstraction levels (numerical, ideal-compone
 5. Set your project directory as the top directory and place the desired computing elements.
 6. Wire elements together and add SPICE directives (e.g. `.tran`) as you would in any LTspice schematic.
 
-For example schematics demonstrating all elements, and for detailed installation notes (including Windows-wide installation), see `DOCUMENTATION.md`.
+For example schematics demonstrating all elements, and for detailed installation notes (including Windows-wide installation), see **[DOCUMENTATION.md](DOCUMENTATION.md)**.
 
 ## Learn More
 
@@ -70,7 +70,7 @@ For full documentation, including:
 - Parameterisation and simulation tips
 - Troubleshooting guidance for convergence and timestep issues
 
-please read **`DOCUMENTATION.md`** in this repository.
+See **[DOCUMENTATION.md](DOCUMENTATION.md)**.
 
 ## Status
 
